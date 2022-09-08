@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 namespace Formy.SeleniumTests
 {
     [TestClass]
-    public class KeyboardAndMousePageShould
+    public class KeyboardAndMousePage
     {
         private readonly string url = "https://formy-project.herokuapp.com/keypress";
 

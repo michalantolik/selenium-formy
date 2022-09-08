@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 namespace Formy.SeleniumTests
 {
     [TestClass]
-    public class HomepageShould
+    public class Homepage
     {
         private readonly string url = "https://formy-project.herokuapp.com/";
 
