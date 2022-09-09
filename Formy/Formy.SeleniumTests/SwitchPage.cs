@@ -30,5 +30,23 @@ namespace Formy.SeleniumTests
                 // NOTHING TO ASSERT
             }
         }
+
+        [TestMethod]
+        public void SwitchToAlert()
+        {
+            using (var driver = new ChromeDriver())
+            {
+                // ARRANGE
+                driver.Navigate().GoToUrl(url);
+                var alertButton = driver.FindElement(By.Id("alert-button"));
+                alertButton.Click();
+
+                // ACT
+                var alert = driver.SwitchTo().Alert();
+                alert.Accept();
+
+                // NOTHING TO ASSERT
+            }
+        }
     }
 }
